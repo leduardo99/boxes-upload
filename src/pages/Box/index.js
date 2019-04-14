@@ -26,7 +26,7 @@ export default class Box extends Component {
 
   subscribeToNewFiles = () => {
     const box = this.props.match.params;
-    const io = socket("https://boxes-upload.herokuapp.com/");
+    const io = socket("https://upload-archives.herokuapp.com/");
 
     io.emit("connectRoom", box.id);
 
