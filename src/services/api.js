@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: process.env.BASE_URL
+    baseURL: "https://boxes-upload.herokuapp.com/"
 });
 
 export default api;
